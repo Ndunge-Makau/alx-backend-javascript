@@ -8,7 +8,7 @@ export default function updateStudentGradeByCity(data, city, newGrades) {
         grade: studentId.grade,
       };
     }
-    return { ...x, grade: "N/A" };
+    return { ...x, grade: 'N/A' };
   });
 
   return newData;
