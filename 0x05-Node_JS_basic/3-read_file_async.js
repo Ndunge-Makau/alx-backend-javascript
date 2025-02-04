@@ -1,6 +1,6 @@
 const { readFile } = require('fs');
 
-function countStudents (fileName) {
+function countStudents(fileName) {
   const students = {};
   const fields = {};
   let length = 0;
@@ -33,7 +33,7 @@ function countStudents (fileName) {
             console.log(
               `Number of students in ${key}: ${value}. List: ${students[
                 key
-              ].join(", ")}`
+              ].join(', ')}`,
             );
           }
         }

@@ -1,12 +1,12 @@
 const fs = require('fs');
 
-function countStudents(fileName){
+function countStudents(fileName) {
   const students = {};
   const fields = {};
   let length = 0;
   try {
     const fileContents = fs.readFileSync(fileName, 'utf-8');
-    const lines = fileContents.toString().split("\n");
+    const lines = fileContents.toString().split('\n');
     for (let i = 0; i < lines.length; i += 1) {
       if (lines[i]) {
         length += 1;

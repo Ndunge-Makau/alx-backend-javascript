@@ -4,7 +4,7 @@ const { readFile } = require('fs');
 const hostname = '127.0.0.1';
 const port = 1245;
 
-function countStudents (fileName) {
+function countStudents(fileName) {
   const students = {};
   const fields = {};
   let length = 0;
@@ -36,7 +36,7 @@ function countStudents (fileName) {
         for (const [key, value] of Object.entries(fields)) {
           if (key !== 'field') {
             output += `Number of students in ${key}: ${value}. `;
-            output += `List: ${students[key].join(", ")}\n`;
+            output += `List: ${students[key].join(', ')}\n`;
           }
         }
         resolve(output);
